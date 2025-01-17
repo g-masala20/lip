@@ -12,8 +12,14 @@ let intlist_of_string s =
   List.map int_of_string (String.split_on_char ' ' s)
 
 (* read one line from stdin, converts to a list of integers, and prints their sum *)
+
+
+
+    
     
 let () = match read_line () with
     Some s -> print_endline (string_of_int (addlist (intlist_of_string s)))
   | None -> print_endline "0"
 
+(*  some (1 2 3)    *)
+(*  [1];[2];[3]     *)
